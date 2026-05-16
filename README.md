@@ -40,7 +40,6 @@ We fine-tune a pretrained Graph Isomorphism Network (GIN) using the attribute ma
 ### Tested Environment
 | Component | Version |
 |-----------|---------|
-| Platform | Google Colab (Linux, x86_64) |
 | GPU | NVIDIA A100 40GB / T4 16GB (either works) |
 | Python | 3.12 |
 | PyTorch | 2.4.0+cu121 |
