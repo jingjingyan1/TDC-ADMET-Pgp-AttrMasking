@@ -89,7 +89,7 @@ Total runtime: approximately 15-20 minutes on T4, 10-15 minutes on A100.
 ├── README.md               # This file
 ├── pgp_gnn.py        # Training and evaluation script
 ├── requirements.txt        # Dependency list
-└── results.txt             # Full output log from the run
+
 ```
 
 ## References
