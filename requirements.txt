@@ -1,0 +1,7 @@
+torch==2.4.0
+dgl==2.1.0
+dgllife==0.3.2
+DeepPurpose
+pytdc
+descriptastorus
+pandas-flavor
