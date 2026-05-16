@@ -51,7 +51,7 @@ We fine-tune a pretrained Graph Isomorphism Network (GIN) using the attribute ma
 
 ### Step-by-step Instructions
 
-**1. Install dependencies (run in a Colab cell):**
+**1. Install dependencies:**
 ```bash
 # Install PyTorch 2.4.0 with CUDA 12.1
 !pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu121
@@ -68,9 +68,9 @@ We fine-tune a pretrained Graph Isomorphism Network (GIN) using the attribute ma
 
 **2. Restart the runtime** (Runtime → Restart runtime). Installed packages persist after restart.
 
-**3. Upload `pgp_gnn_colab.py` and run:**
+**3. Upload `pgp_gnn.py` and run:**
 ```bash
-!python pgp_gnn_colab.py 2>&1 | tee results.txt
+!python pgp_gnn.py 2>&1 | tee results.txt
 ```
 
 Total runtime: approximately 15-20 minutes on T4, 10-15 minutes on A100.
@@ -87,7 +87,7 @@ Total runtime: approximately 15-20 minutes on T4, 10-15 minutes on A100.
 ## File Structure
 ```
 ├── README.md               # This file
-├── pgp_gnn_colab.py        # Training and evaluation script
+├── pgp_gnn.py        # Training and evaluation script
 ├── requirements.txt        # Dependency list
 └── results.txt             # Full output log from the run
 ```
