@@ -1,8 +1,7 @@
 """
 Pgp_Broccatelli benchmark - AttrMasking (pretrained GNN) via DeepPurpose
-Run on Google Colab with GPU
 
-Setup (run once in Colab):
+Setup:
     !pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu121
     !pip install dgl -f https://data.dgl.ai/wheels/torch-2.4/cu121/repo.html
     !pip install dgllife DeepPurpose pytdc
@@ -10,7 +9,7 @@ Setup (run once in Colab):
     # Then restart runtime
 
 Run:
-    !python pgp_gnn_colab.py 2>&1 | tee results.txt
+    !python pgp_gnn.py 2>&1 | tee results.txt
 """
 
 import numpy as np
