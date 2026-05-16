@@ -40,7 +40,7 @@ We fine-tune a pretrained Graph Isomorphism Network (GIN) using the attribute ma
 ### Tested Environment
 | Component | Version |
 |-----------|---------|
-| GPU | NVIDIA A100 40GB / T4 16GB (either works) |
+| GPU | NVIDIA A100 |
 | Python | 3.12 |
 | PyTorch | 2.4.0+cu121 |
 | CUDA (PyTorch) | 12.1 |
