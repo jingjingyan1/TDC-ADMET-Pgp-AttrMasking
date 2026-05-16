@@ -51,9 +51,7 @@ We fine-tune a pretrained Graph Isomorphism Network (GIN) using the attribute ma
 
 ### Step-by-step Instructions
 
-**1. Create a new Google Colab notebook and select a GPU runtime (T4 is sufficient).**
-
-**2. Install dependencies (run in a Colab cell):**
+**1. Install dependencies (run in a Colab cell):**
 ```bash
 # Install PyTorch 2.4.0 with CUDA 12.1
 !pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu121
@@ -68,9 +66,9 @@ We fine-tune a pretrained Graph Isomorphism Network (GIN) using the attribute ma
 !pip install git+https://github.com/bp-kelley/descriptastorus pandas-flavor
 ```
 
-**3. Restart the runtime** (Runtime → Restart runtime). Installed packages persist after restart.
+**2. Restart the runtime** (Runtime → Restart runtime). Installed packages persist after restart.
 
-**4. Upload `pgp_gnn_colab.py` and run:**
+**3. Upload `pgp_gnn_colab.py` and run:**
 ```bash
 !python pgp_gnn_colab.py 2>&1 | tee results.txt
 ```
