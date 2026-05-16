@@ -101,4 +101,4 @@ Total runtime: approximately 15-20 minutes on T4, 10-15 minutes on A100.
 
 ## License
 
-MIT
+Apache 2.0
