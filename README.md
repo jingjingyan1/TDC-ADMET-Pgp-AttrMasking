@@ -2,6 +2,12 @@
 
 Submission to the [TDC ADMET Benchmark Leaderboard](https://tdcommons.ai/benchmark/admet_group/03pgp/) for P-glycoprotein (Pgp) inhibition prediction on the Pgp_Broccatelli dataset.
 
+## Overview
+
+We apply a pretrained Graph Isomorphism Network (GIN) with attribute masking to predict P-glycoprotein (Pgp) substrate status. Pgp is a membrane efflux pump that reduces drug bioavailability by pumping compounds out of cells. Predicting whether a drug is a Pgp substrate is a key step in ADMET profiling during early-stage drug discovery.
+
+Our model achieves AUROC 0.937 ± 0.004 on the TDC Pgp_Broccatelli benchmark, ranking second on the leaderboard. We also provide an XGBoost baseline (AUROC 0.912 ± 0.007) for comparison.
+
 ## Results
 
 | Seed | AUROC | AUPRC | F1 |
