@@ -13,6 +13,20 @@ Submission to the [TDC ADMET Benchmark Leaderboard](https://tdcommons.ai/benchma
 | 5 | 0.939 | 0.947 | 0.861 |
 | **Mean ± Std** | **0.937 ± 0.004** | **0.947 ± 0.002** | **0.867 ± 0.010** |
 
+## XGBoost Baseline
+
+We also provide an XGBoost baseline using Morgan fingerprints (2048-bit, radius 2) for comparison.
+
+| Model | AUROC |
+|-------|-------|
+| AttrMasking GNN | **0.937 ± 0.004** |
+| XGBoost + Morgan FP | 0.912 ± 0.007 |
+
+The XGBoost baseline can be run locally without GPU:
+
+```bash
+py -3.10 pgp_xgboost.py
+```
 ## Method
 
 We fine-tune a pretrained Graph Isomorphism Network (GIN) using the attribute masking strategy (Hu et al., 2020) implemented in [DeepPurpose](https://github.com/kexinhuang12345/DeepPurpose). The GIN was pretrained via self-supervised learning on approximately 2 million molecules from the ZINC15 and ChEMBL datasets. The pretrained molecular encoder is then fine-tuned end-to-end on the Pgp_Broccatelli training set with an MLP classification head.
@@ -87,9 +101,9 @@ Total runtime: approximately 15-20 minutes on T4, 10-15 minutes on A100.
 ## File Structure
 ```
 ├── README.md               # This file
-├── pgp_gnn.py        # Training and evaluation script
+├── pgp_gnn.py              # AttrMasking GNN (primary model)
+├── pgp_xgboost.py          # XGBoost baseline
 ├── requirements.txt        # Dependency list
-
 ```
 
 ## References
